@@ -1,3 +1,5 @@
+[![ImageBoss logo](https://img.imageboss.me/width/180/https://imageboss.me/emails/logo-2@2x.png)](https://imageboss.me)
+
 # ImageBoss for Shopify
 
 This is a step-by-step guide on how to integrate ImageBoss with Shopify.
