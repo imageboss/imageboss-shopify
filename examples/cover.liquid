@@ -1,0 +1,2 @@
+{% assign  product_url = image | img_url: 'master' %}
+{% capture imageboss_url %}{% include 'imageboss' src:product_url, operation: 'cover', size: '300x300' %}{% endcapture %}

@@ -1,0 +1,13 @@
+{% capture image_url %}
+  {% if settings.imageboss_enable %}
+    {% assign imageboss_api_url = "https://img.imageboss.me" %}
+    {% if options %}
+      {% capture new_src %}{{ imageboss_api_url }}/{{ operation }}/{{ size }}/{{ options }}/https:{{ src }}{% endcapture %}
+    {% else %}
+      {% capture new_src %}{{ imageboss_api_url }}/{{ operation }}/{{ size }}/https:{{ src }}{% endcapture %}
+    {% endif %}
+    {{ new_src }}
+  {% else %}
+    {{ src }}
+  {% endif %}
+{% endcapture %}{{ image_url | strip }}

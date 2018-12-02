@@ -1,0 +1,15 @@
+{
+  "name": "ImageBoss",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "For more information see the [docs](https:\/\/imageboss.me/docs\/integrations\/shopify)"
+    },
+    {
+      "type": "checkbox",
+      "id": "imageboss_enable",
+      "label": "Enable ImageBoss",
+      "info": "Toggle the ImageBoss feature"
+    }
+  ]
+}
