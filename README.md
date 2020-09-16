@@ -1,4 +1,4 @@
-[![ImageBoss logo](https://img.imageboss.me/boss-images/width/180/emails/logo-2@2x.png)](https://imageboss.me)
+<img src="https://img.imageboss.me/boss-images/width/180/dpr:2/emails/logo-2@2x.png" width="180"/>
 
 # ImageBoss for Shopify
 
