@@ -10,6 +10,13 @@
       "id": "imageboss_enable",
       "label": "Enable ImageBoss",
       "info": "Toggle the ImageBoss feature"
+    },
+    {
+      "type": "text",
+      "id": "imageboss_source",
+      "label": "ImageBoss Source",
+      "default": "my-website-source",
+      "info": "The ImageBoss source you get from your Dashboard"
     }
   ]
 }
