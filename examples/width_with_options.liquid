@@ -1,2 +1,2 @@
-{% assign  product_url = image | image_url: 'master' %}
+{% assign  product_url = image | img_url: 'master' %}
 {% capture imageboss_url %}{% render 'imageboss' src:product_url, operation: 'width', size: '500', options: 'dpr:2' %}{% endcapture %}

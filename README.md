@@ -77,7 +77,7 @@ Basic Usage
 
 As each layout/theme has its own complexities, you need to edit your themes and modifiy the original URLs of the images as follows:
 ```liquid
-{% assign  product_url = image | image_url: 'master' %}
+{% assign  product_url = image | img_url: 'master' %}
 {% capture imageboss_url %}{% render 'imageboss' src:product_url, operation: 'cover', size: '300x300', options: 'dpr:2' %}{% endcapture %}
 <img src="{{ imageboss_url }}" />
 ```
