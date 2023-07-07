@@ -60,7 +60,8 @@ So at the end of this file, right after the last `}` character, add a comma, lik
 {% capture image_url %}
     {% if settings.imageboss_enable %}
       {% assign imageboss_api_url = "https://img.imageboss.me" %}
-      {% assign src_without_domain = src | split: '//cdn.shopify.com' %}
+      {% assign cdn_url = '//' | append: settings.shopify_cdn_url %}
+      {% assign src_without_domain = src | split: cdn_url %}
       {% assign base_url = imageboss_api_url | append: '/' | append: settings.imageboss_source %}
       {% assign params = operation %}
 
@@ -75,6 +76,7 @@ So at the end of this file, right after the last `}` character, add a comma, lik
       {{ src }}
     {% endif %}
 {% endcapture %}{{ image_url | strip }}
+
 ```
 
 4. Now go to your Theme Settings and activate the ImageBoss helper.
