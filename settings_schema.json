@@ -17,6 +17,13 @@
       "label": "ImageBoss Source",
       "default": "my-website-source",
       "info": "The ImageBoss source you get from your Dashboard"
+    },
+    {
+      "type": "text",
+      "id": "shopify_cdn_url",
+      "label": "Shopify CDN",
+      "default": "cdn.shopify.com",
+      "info": "In case you have a custom CDN in your image URLs"
     }
   ]
 }

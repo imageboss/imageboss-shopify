@@ -41,6 +41,13 @@ So at the end of this file, right after the last `}` character, add a comma, lik
       "label": "ImageBoss Source",
       "default": "my-website-source",
       "info": "The ImageBoss source you get from your Dashboard"
+    },
+    {
+      "type": "text",
+      "id": "shopify_cdn_url",
+      "label": "Shopify CDN",
+      "default": "cdn.shopify.com",
+      "info": "In case you have a custom CDN in your image URLs"
     }
   ]
 }
@@ -78,7 +85,7 @@ Basic Usage
 As each layout/theme has its own complexities, you need to edit your themes and modifiy the original URLs of the images as follows:
 ```liquid
 {% assign  product_url = image | img_url: 'master' %}
-{% capture imageboss_url %}{% render 'imageboss' src:product_url, operation: 'cover', size: '300x300', options: 'dpr:2' %}{% endcapture %}
+{% capture imageboss_url %}{% render 'imageboss', src: product_url, operation: 'cover', size: '300x300', options: 'dpr:2' %}{% endcapture %}
 <img src="{{ imageboss_url }}" />
 ```
 
